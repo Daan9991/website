@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+:root{
+	--primair: #FCCA2A;
+	--secondair: white;
+}
+body{
+	background: linear-gradient(var(--primair), #000000);
+	min-height: 100vh;
+}
+main{
+	margin-top: 5%;
+	padding: 0 15%
+}
+/*VARIABELE CLASSES*/
+.text_center{
+	text-align: center;
+}
+.container_flex{
+	display: flex;
+}
+.side{
+	flex: 1;
+}
+.container_text{
+	padding: 0 5%;
+}
+.active{
+	font-weight: 700;
+	font-size: 17pt;
+}
+section{
+	color: var(--secondair);
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.space_top{
+	margin-top: 3%;
+}
+/*BRON VERMELDING*/
+.bron{
+	font-size: 6pt;
+	color: white;
+}
+.bron a{
+	color: white;
+	text-decoration: none;
+}
+.bron_banner{
+	font-size: 6pt;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bron_banner a{
+	color: white;
+	text-decoration: none;
+}
+/*Navigatie menu*/
+ul{
+	display: flex;
+	justify-content: center;
+	margin: 2% 0;
+}
+ul li{
+	padding: 0 2%;
+	list-style-type: none;
+}
+ul li a{
+	color: var(--primair);
+	text-decoration: none;
+	font-size: 15pt;
+}
+/*Banners*/ 
+/*Video*/
+.banner{
+	width: 100%; 
+	height: 100vh; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	margin: -5% 0 0 0; 
+}
+.banner video{
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	object-fit: cover; 
+	height: 100%; 
+	width: 100%; 
+	z-index: -2; 
+}
+/*content over video*/
+.content{
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h1{
+	color: var(--primair);
+	text-transform: uppercase;
+	font-size: 50pt;
+}
+.content a{
+	text-decoration: none;
+	color: black;
+	background: rgba(252, 202, 42);
+	border: 3pt solid black;
+	border-radius: 30px;
+	padding: 0.5em 4em;
+	margin: 0.5em;
+	font-weight: 500;
+}
+/*Image*/
+.banner_img{
+	margin-top: -6%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	height: 31.5vh;
+    color: var(--primair);
+}
+.banner_img img{
+	position: absolute;
+	z-index: -2; 
+}
+
+/*Actie.html*/ 
+fieldset{
+	border: none;
+}
+input{
+	margin-bottom: 4%;
+	width: 100%;
+	padding: 5px;
+	border: none;
+	background-color: #f8f8f8;
+	border-radius: 7px;
+	height: 2.5em;
+}
+input:hover{
+	border: 3px solid black;
+}
+textarea{
+	width: 100%;
+	border: none;
+	border-radius: 7px;
+}
+input[type="submit"]{
+	font-weight: 500;
+	background: #41C920;
+	border: none;
+	color: white;
+	height: 3em;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+	background: #1DA405;
+}
+/*BLOEM*/
+.bloem_container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.bloem{
+  height: 50vh;
+  width: 50vh;
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+}
+.center_bloem{
+  background-image: url(../img/bloem/1.png);
+  background-size: cover;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.leaf1{
+  background-image: url(../img/bloem/economie.png);
+  background-size: cover;
+  width: 28%;
+  height: 20%;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.leaf2{
+  background-image: url(../img/bloem/dieren.png);
+  background-size: cover;
+  width: 23%;
+  height: 23%;
+  position: absolute;
+  left: 72.5%;
+  top: 72.5%;
+  transform: translate(-50%, -50%);
+}
+.leaf3{
+  background-image: url(../img/bloem/dieet.png);
+  background-size: cover;
+  width: 20%;
+  height: 27%;
+  position: absolute;
+  left: 50%;
+  top: 21%;
+  transform: translate(-50%, -50%);
+}
+.leaf4{
+  background-image: url(../img/bloem/gezondheid.png);
+  background-size: cover;
+  width: 24.5%;
+  height: 22%;
+  position: absolute;
+  left: 73.5%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+}
+.leaf5{
+  background-image: url(../img/bloem/landschap.png);
+  background-size: cover;
+  width: 23%;
+  height: 21%;
+  position: absolute;
+  left: 28%;
+  top: 72%;
+  transform: translate(-50%, -50%);
+}
+.leaf6{
+  background-image: url(../img/bloem/honing.png);
+  background-size: cover;
+  width: 20%;
+  height: 27.5%;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+.leaf7{
+  background-image: url(../img/bloem/tnt.png);
+  background-size: cover;
+  width: 22%;
+  height: 22%;
+  position: absolute;
+  left: 28%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+}
+.leaf8{
+  background-image: url(../img/bloem/stuivers.png);
+  background-size: cover;
+  width: 28%;
+  height: 20%;
+  position: absolute;
+  left: 20.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+footer{
+	height: 15vh;
+}
+/*MEDIA QUERRYS*/
+@media only screen and (max-width: 1450px) {
+  .banner_img{
+  	margin-top: -8% 
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .banner_img{
+  	margin-top: -10% 
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .banner_img{
+  	margin-top: -12% 
+  }
+}
+@media only screen and (max-width: 800px) {
+  .banner_img{
+  	margin-top: -17% 
+  }
+    .container_flex{
+  	flex-flow: wrap;
+  }
+}
