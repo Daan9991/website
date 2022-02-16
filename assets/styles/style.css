@@ -88,7 +88,7 @@ ul li a{
 	align-items: center; 
 	margin: -5% 0 0 0; 
 }
-.banner video{
+.banner iframe{
 	position: absolute;
 	top: 0; 
 	left: 0; 
